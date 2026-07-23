@@ -1,9 +1,20 @@
 export default {
 	async fetch() {
-		let status = false;
-		console.log('Current status : ', status);
-		return new Response(JSON.stringify({ isPublished: status, url: status ? 'https://thikra.netlify.app' : null }), {
-			headers: { 'Content-Type': 'application/json' },
+		// Set to true to trigger update redirect for old preview users
+		let isPublished = false;
+		
+		return new Response(JSON.stringify({ 
+			isPublished: isPublished, 
+			url: 'https://thikra.netlify.app/new-update',
+			
+			// New properties for the updated app check
+			version: '1.0.4',
+			message: 'تحديث جديد متاح! يرجى التحديث للحصول على أحدث الميزات والتحسينات.'
+		}), {
+			headers: { 
+				'Content-Type': 'application/json',
+				'Access-Control-Allow-Origin': '*'
+			},
 		});
 	},
 };
