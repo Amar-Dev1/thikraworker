@@ -22,7 +22,7 @@ export default {
 					service: 'Thikra OTA Update Worker',
 					latestVersion: env.LATEST_VERSION || '2.1.0',
 				}),
-				{ headers: corsHeaders }
+				{ headers: corsHeaders },
 			);
 		}
 
@@ -49,17 +49,17 @@ export default {
 							url: bundleUrl,
 							checksum: checksum,
 						}),
-						{ headers: corsHeaders }
+						{ headers: corsHeaders },
 					);
 				}
 
 				// No update available
 				return new Response(JSON.stringify({}), { headers: corsHeaders });
 			} catch (err) {
-				return new Response(
-					JSON.stringify({ error: 'Internal Worker Error', details: err.message }),
-					{ status: 500, headers: corsHeaders }
-				);
+				return new Response(JSON.stringify({ error: 'Internal Worker Error', details: err.message }), {
+					status: 500,
+					headers: corsHeaders,
+				});
 			}
 		}
 
