@@ -8,7 +8,7 @@
 	},
 	"vars": {
 		"LATEST_VERSION": "2.1.0",
-		"BUNDLE_URL": "",
+		"BUNDLE_URL": "https://github.com/Amar-Dev1/thikra-capacitor/releases/download/v2.1.0/bundle-ota.zip",
 		"CHECKSUM": ""
 	}
 }
