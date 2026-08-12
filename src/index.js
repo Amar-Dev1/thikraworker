@@ -38,7 +38,7 @@ export default {
 
 				const clientVersion = body.version_name || body.version || '0.0.0';
 				const latestVersion = env.LATEST_VERSION || '2.1.3';
-				const bundleUrl = env.BUNDLE_URL || 'https://github.com/Amar-Dev1/thikra-capacitor/releases/download/v2.1.3/bundle-ota.zip';
+				const bundleUrl = env.BUNDLE_URL || 'https://thikraworker.thikraworker1.workers.dev/bundle-ota.zip';
 				const checksum = env.CHECKSUM || '';
 
 				// Compare version string

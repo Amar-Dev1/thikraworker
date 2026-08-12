@@ -3,12 +3,15 @@
 	"name": "thikraworker",
 	"main": "src/index.js",
 	"compatibility_date": "2025-11-19",
+	"assets": {
+		"directory": "./public"
+	},
 	"observability": {
 		"enabled": true
 	},
 	"vars": {
 		"LATEST_VERSION": "2.1.3",
-		"BUNDLE_URL": "https://github.com/Amar-Dev1/thikra-capacitor/releases/download/v2.1.3/bundle-ota.zip",
+		"BUNDLE_URL": "https://thikraworker.thikraworker1.workers.dev/bundle-ota.zip",
 		"CHECKSUM": ""
 	}
 }
