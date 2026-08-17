@@ -37,7 +37,7 @@ export default {
 				}
 
 				const clientVersion = body.version_name || body.version || '0.0.0';
-				const latestVersion = env.LATEST_VERSION || '3.0.0';
+				const latestVersion = env.LATEST_VERSION || '3.0.1';
 				const bundleUrl = env.BUNDLE_URL || 'https://thikraworker.thikraworker1.workers.dev/bundle-ota.zip';
 				const checksum = env.CHECKSUM || '';
 
