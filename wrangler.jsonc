@@ -10,7 +10,7 @@
 		"enabled": true
 	},
 	"vars": {
-		"LATEST_VERSION": "3.0.1",
+		"LATEST_VERSION": "3.0.2",
 		"BUNDLE_URL": "https://thikraworker.thikraworker1.workers.dev/bundle-ota.zip",
 		"CHECKSUM": ""
 	}
